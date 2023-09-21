@@ -1,6 +1,6 @@
 all: compile run clean
 
-SRC_FILES := $(shell find ./src/ ./tests -type f -name '*.c')
+SRC_FILES := $(shell find ./external/ ./src/ ./tests -type f -name '*.c')
 
 compile:
 	@gcc $(SRC_FILES) -o test_suite
