@@ -3,8 +3,7 @@
 #include <string.h>
 
 char *hello(char *name) {
-  char greetings[100];
-  strcpy(greetings, "Hello ");
+  char greetings[100] = "Hello ";
   strcat(greetings, name);
   return strdup(greetings);
 }
