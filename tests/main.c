@@ -8,8 +8,9 @@ void tearDown(void) {}
 int main(void) {
   UNITY_BEGIN();
 
-  RUN_TEST(shouldReturnCorrectValuePosition);
-  RUN_TEST(shouldReturnNegativePositionIfValueNotFound);
+  RUN_TEST(shouldReturnCorrectPositionAndValue);
+  RUN_TEST(shouldReturnNegativePositionAndValueIfValueNotFound);
+  RUN_TEST(shouldReturnNegativePositionAndValueIfArrayEmpty);
 
   return UNITY_END();
 }
