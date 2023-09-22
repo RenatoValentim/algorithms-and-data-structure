@@ -9,6 +9,7 @@ int main(void) {
   UNITY_BEGIN();
 
   RUN_TEST(shouldReturnCorrectValuePosition);
+  RUN_TEST(shouldReturnNegativePositionIfValueNotFound);
 
   return UNITY_END();
 }
