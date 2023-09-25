@@ -30,3 +30,13 @@ void shouldReturnNegativePositionAndValueIfArrayEmpty(void) {
   TEST_ASSERT_EQUAL(-1, result.index);
   TEST_ASSERT_EQUAL(-1, result.value);
 }
+
+void shouldReturnNegativePositionAndValueIfArrayNULL(void) {
+  int numbers[] = {};
+  int size = sizeof(numbers) / sizeof(numbers[0]);
+
+  Result result = binarySearch(NULL, size, 0);
+
+  TEST_ASSERT_EQUAL(-1, result.index);
+  TEST_ASSERT_EQUAL(-1, result.value);
+}
