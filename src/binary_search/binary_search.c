@@ -2,6 +2,13 @@
 
 Result binarySearch(int arr[], int arrSize, int value) {
   Result result;
+
+  if (!value) {
+    result.index = -1;
+    result.value = -1;
+    return result;
+  }
+
   int low = 0;
   int hight = arrSize - 1;
 

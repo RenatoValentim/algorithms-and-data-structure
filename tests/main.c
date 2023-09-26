@@ -12,6 +12,8 @@ int main(void) {
   RUN_TEST(shouldReturnNegativePositionAndValueIfValueNotFound);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayEmpty);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayNULL);
+  RUN_TEST(shouldReturnNegativePositionAndValueIfArraySizeEqualZero);
+  RUN_TEST(shouldReturnNegativePositionAndValueIfArraySizeNeative);
 
   return UNITY_END();
 }
