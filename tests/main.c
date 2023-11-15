@@ -19,7 +19,8 @@ int main(void) {
   RUN_TEST(shouldSumAllValuesAndReturnTheTotal);
   RUN_TEST(shouldReturnImmediatelyTheValueIfArrayHasOnlyOneValue);
   RUN_TEST(shouldReturnZeroIfTheArrayIsEmpty);
-  RUN_TEST(shouldReturnTotalItemsArr);
+  RUN_TEST(shouldReturnTotalItemsArrWithSequentialValues);
+  RUN_TEST(shouldReturnTotalItemsArrWithoutSequentialValues);
 
   return UNITY_END();
 }

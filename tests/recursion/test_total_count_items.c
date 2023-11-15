@@ -1,10 +1,19 @@
 #include "../../external/Unity/unity.h"
 #include "../../src/recursion/total_count_items.h"
 
-void shouldReturnTotalItemsArr() {
-  int arr[] = {1, 2, 3, 4, 5};
-  int size = sizeof(arr) / sizeof(arr[0]);
-  int total = totalCountItems(arr, size, 0);
+#define SENTINEL 0
 
-  TEST_ASSERT_EQUAL(5, total);
+void shouldReturnTotalItemsArrWithSequentialValues() {
+
+  int arr[] = {1, 2, 3, 4, 5, SENTINEL};
+  int size = getArrSize(arr);
+
+  TEST_ASSERT_EQUAL(5, size);
+}
+
+void shouldReturnTotalItemsArrWithoutSequentialValues() {
+  int arr[] = {1, 2, 5, 8, 9, SENTINEL};
+  int size = getArrSize(arr);
+
+  TEST_ASSERT_EQUAL(5, size);
 }
