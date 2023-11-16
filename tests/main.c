@@ -1,5 +1,5 @@
 #include "../external/Unity/unity.h"
-#include "binary_search/test_binary_search.h"
+#include "structured/test_binary_search.h"
 #include "recursion/test_get_array_size.h"
 #include "recursion/test_sum.h"
 
