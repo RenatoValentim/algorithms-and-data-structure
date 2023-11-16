@@ -1,6 +1,6 @@
 #include "../external/Unity/unity.h"
 #include "binary_search/test_binary_search.h"
-#include "recursion/test_total_count_items.h"
+#include "recursion/test_get_array_size.h"
 #include "recursion/test_sum.h"
 
 void setUp(void) {}
@@ -21,6 +21,7 @@ int main(void) {
   RUN_TEST(shouldReturnZeroIfTheArrayIsEmpty);
   RUN_TEST(shouldReturnTotalItemsArrWithSequentialValues);
   RUN_TEST(shouldReturnTotalItemsArrWithoutSequentialValues);
+  RUN_TEST(shouldReturnZeroIfEmptyArray);
 
   return UNITY_END();
 }

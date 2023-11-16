@@ -5,6 +5,7 @@
 void shouldSumAllValuesAndReturnTheTotal() {
   int arr[] = {2, 4, 6};
   int size = sizeof(arr) / sizeof(arr[0]);
+
   int total = sum(arr, size);
 
   TEST_ASSERT_EQUAL(12, total);
@@ -13,6 +14,7 @@ void shouldSumAllValuesAndReturnTheTotal() {
 void shouldReturnImmediatelyTheValueIfArrayHasOnlyOneValue() {
   int arr[] = {2};
   int size = sizeof(arr) / sizeof(arr[0]);
+
   int total = sum(arr, size);
 
   TEST_ASSERT_EQUAL(2, total);
@@ -21,6 +23,7 @@ void shouldReturnImmediatelyTheValueIfArrayHasOnlyOneValue() {
 void shouldReturnZeroIfTheArrayIsEmpty() {
   int arr[] = {};
   int size = sizeof(arr) / sizeof(arr[0]);
+
   int total = sum(arr, size);
 
   TEST_ASSERT_EQUAL(0, total);
