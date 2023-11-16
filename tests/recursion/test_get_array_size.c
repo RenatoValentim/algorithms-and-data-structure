@@ -1,7 +1,7 @@
 #include "../../external/Unity/unity.h"
 #include "../../src/recursion/get_array_size.h"
 
-#define SENTINEL 0
+#define SENTINEL '\0'
 
 void shouldReturnTotalItemsArrWithSequentialValues() {
   int arr[] = {1, 2, 3, 4, 5, SENTINEL};
