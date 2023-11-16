@@ -1,5 +1,5 @@
 #include "../../external/Unity/unity.h"
-#include "../../src/recursion/get_array_size.h"
+#include "../../src/recursive/get_array_size.h"
 
 #define SENTINEL '\0'
 
