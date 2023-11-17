@@ -1,6 +1,4 @@
-#include <stdio.h>
-
-#define SENTINEL '\0'
+#include "../../utils/sentinel.h"
 
 int getArrSize(int arr[], int index) {
   if (arr[index] == SENTINEL) {
