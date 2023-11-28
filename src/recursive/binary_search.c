@@ -1,64 +1,34 @@
 #include "binary_search.h"
 #include "get_array_size.h"
 #include <stdio.h>
+#include <stdlib.h>
 
-Result binarySearchRecursive(int arr[], int value) {
-  Result result;
-
+int binarySearchRecursive(int arr[], int value) {
   if (!value || arr == NULL) {
-    result.index = -1;
-    result.value = -1;
-    return result;
+    return -1;
   }
-
-  int arrSize = getArrSize(arr, 0);
   int low = 0;
-  int hight = arrSize - 1;
-
-  if (low <= hight) {
-    int middle = (low + hight) / 2;
-    int guess = arr[middle];
-    if (guess == value) {
-      result.index = middle;
-      result.value = value;
-      return result;
-    }
-    int i;
-    int arrAux[] = {};
-    if (guess > value) {
-      hight = middle - 1;
-      for (i = 0; i < hight; i++) {
-        arrAux[i] = arr[1];
-      }
-      arr = arrAux;
-    } else {
-      low = middle + 1;
-      for (i = 0; low > i; i++) {
-        arrAux[i] = arr[1];
-      }
-      arr = arrAux;
-    }
-    return binarySearchRecursive(arr + 1, guess);
+  int arrSize = getArrSize(arr, low);
+  if (arrSize == 0) {
+    return -1;
   }
-
-  // while (low <= hight) {
-  //   int middle = (low + hight) / 2;
-  //   int guess = arr[middle];
-  //
-  //   if (guess == value) {
-  //     result.index = middle;
-  //     result.value = value;
-  //     return result;
-  //   }
-  //
-  //   if (guess > value) {
-  //     hight = middle - 1;
-  //   } else {
-  //     low = middle + 1;
-  //   }
-  // }
-
-  result.index = -1;
-  result.value = -1;
-  return result;
+  int high = arrSize - 1;
+  int middle = (low + high) / 2;
+  int guess = arr[middle];
+  if (guess == value) {
+    return guess;
+  }
+  if (guess < value) {
+    return binarySearchRecursive(arr + (middle + 1), value);
+  } else if (guess > value) {
+    high = middle - 1;
+    int *newArr = (int *)malloc((high + 1) * sizeof(int));
+    for (low = 0; low <= high; low++) {
+      newArr[low] = arr[low];
+    }
+    int output = binarySearchRecursive(newArr, value);
+    free(newArr);
+    return output;
+  }
+  return -1;
 }
