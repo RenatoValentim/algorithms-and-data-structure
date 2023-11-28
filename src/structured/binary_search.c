@@ -10,10 +10,10 @@ Result binarySearch(int arr[], int arrSize, int value) {
   }
 
   int low = 0;
-  int hight = arrSize - 1;
+  int high = arrSize - 1;
 
-  while (low <= hight) {
-    int middle = (low + hight) / 2;
+  while (low <= high) {
+    int middle = (low + high) / 2;
     int guess = arr[middle];
 
     if (guess == value) {
@@ -23,7 +23,7 @@ Result binarySearch(int arr[], int arrSize, int value) {
     }
 
     if (guess > value) {
-      hight = middle - 1;
+      high = middle - 1;
     } else {
       low = middle + 1;
     }
