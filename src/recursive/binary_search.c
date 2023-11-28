@@ -2,6 +2,7 @@
 #include "get_array_size.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int binarySearchRecursive(int arr[], int value) {
   if (!value || arr == NULL) {
@@ -23,9 +24,11 @@ int binarySearchRecursive(int arr[], int value) {
   } else if (guess > value) {
     high = middle - 1;
     int *newArr = (int *)malloc((high + 1) * sizeof(int));
-    for (low = 0; low <= high; low++) {
-      newArr[low] = arr[low];
+    if (newArr == NULL) {
+      fprintf(stderr, "Memory allocation failed.\n");
+      exit(EXIT_FAILURE);
     }
+    memcpy(newArr, arr, (high + 1) * sizeof(int));
     int output = binarySearchRecursive(newArr, value);
     free(newArr);
     return output;
