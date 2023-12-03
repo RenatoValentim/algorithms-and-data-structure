@@ -20,9 +20,12 @@ int main(void) {
   RUN_TEST(shouldSumAllValuesAndReturnTheTotal);
   RUN_TEST(shouldReturnImmediatelyTheValueIfArrayHasOnlyOneValue);
   RUN_TEST(shouldReturnZeroIfTheArrayIsEmpty);
+
   RUN_TEST(shouldReturnTotalItemsArrWithSequentialValues);
   RUN_TEST(shouldReturnTotalItemsArrWithoutSequentialValues);
   RUN_TEST(shouldReturnZeroIfEmptyArray);
+  RUN_TEST(shouldReturnNegativeNumberIfIndexLessThenZero);
+
   RUN_TEST(shouldReturnCorrectPositionAndValue_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfValueNotFound_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayEmpty_Recursive);

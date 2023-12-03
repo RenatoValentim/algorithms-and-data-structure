@@ -29,3 +29,12 @@ void shouldReturnZeroIfEmptyArray() {
 
   TEST_ASSERT_EQUAL(0, size);
 }
+
+void shouldReturnNegativeNumberIfIndexLessThenZero() {
+  int arr[] = {SENTINEL};
+  int index = -1;
+
+  int size = getArrSize(arr, index);
+
+  TEST_ASSERT_EQUAL(-1, size);
+}
