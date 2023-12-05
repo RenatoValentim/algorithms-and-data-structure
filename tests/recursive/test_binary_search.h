@@ -5,5 +5,6 @@ void shouldReturnCorrectPositionAndValue_Recursive(void);
 void shouldReturnNegativePositionAndValueIfValueNotFound_Recursive(void);
 void shouldReturnNegativePositionAndValueIfArrayEmpty_Recursive(void);
 void shouldReturnNegativePositionAndValueIfArrayNULL_Recursive(void);
+void shouldReturnZero_Recursive(void);
 
 #endif // !TEST_BINARY_SEARCH_RECURSIVE_H

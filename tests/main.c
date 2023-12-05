@@ -35,6 +35,7 @@ int main(void) {
   RUN_TEST(shouldReturnNegativePositionAndValueIfValueNotFound_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayEmpty_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayNULL_Recursive);
+  RUN_TEST(shouldReturnZero_Recursive);
 
   return UNITY_END();
 }
