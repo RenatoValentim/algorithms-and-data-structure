@@ -1,7 +1,8 @@
 #include "get_array_size.h"
+#include "../../utils/sentinel.h"
 
 int sum(int arr []) {
-  int size = getArrSize(arr, 0);
+  int size = getArrSize(arr, 0, ARRAY_INT_SENTINEL);
   if (size == 1) {
     return arr[0];
   }

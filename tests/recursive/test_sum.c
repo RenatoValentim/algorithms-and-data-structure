@@ -4,7 +4,7 @@
 #include "../../utils/sentinel.h"
 
 void shouldSumAllValuesAndReturnTheTotal() {
-  int arr[] = {2, 4, 6, SENTINEL};
+  int arr[] = {2, 4, 6, ARRAY_INT_SENTINEL};
 
   int total = sum(arr);
 
@@ -12,7 +12,7 @@ void shouldSumAllValuesAndReturnTheTotal() {
 }
 
 void shouldReturnImmediatelyTheValueIfArrayHasOnlyOneValue() {
-  int arr[] = {2, SENTINEL};
+  int arr[] = {2, ARRAY_INT_SENTINEL};
 
   int total = sum(arr);
 
@@ -20,7 +20,7 @@ void shouldReturnImmediatelyTheValueIfArrayHasOnlyOneValue() {
 }
 
 void shouldReturnZeroIfTheArrayIsEmpty() {
-  int arr[] = {SENTINEL};
+  int arr[] = {ARRAY_INT_SENTINEL};
 
   int total = sum(arr);
 
