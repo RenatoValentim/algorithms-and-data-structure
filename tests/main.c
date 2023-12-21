@@ -1,8 +1,8 @@
 #include "../external/Unity/unity.h"
-#include "recursive/test_get_array_size.h"
-#include "recursive/test_sum.h"
-#include "structured/test_binary_search.h"
-#include "recursive/test_binary_search.h"
+#include "recursive/utils/test_get_array_size.h"
+#include "recursive/examples/test_sum.h"
+#include "structured/algorithms/test_binary_search.h"
+#include "recursive/algorithms/test_binary_search.h"
 
 void setUp(void) {}
 

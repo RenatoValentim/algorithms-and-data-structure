@@ -1,6 +1,6 @@
-#include "../../external/Unity/unity.h"
-#include "../../src/recursive/binary_search.h"
-#include "../../utils/sentinel.h"
+#include "../../../external/Unity/unity.h"
+#include "../../../src/recursive/algorithms/binary_search.h"
+#include "../../../utils/sentinel.h"
 #include <stdio.h>
 
 void shouldReturnCorrectPositionAndValue_Recursive(void) {

@@ -1,7 +1,7 @@
 #include "test_sum.h"
-#include "../../external/Unity/unity.h"
-#include "../../src/recursive/sum.h"
-#include "../../utils/sentinel.h"
+#include "../../../external/Unity/unity.h"
+#include "../../../src/recursive/examples/sum.h"
+#include "../../../utils/sentinel.h"
 
 void shouldSumAllValuesAndReturnTheTotal() {
   int arr[] = {2, 4, 6, ARRAY_INT_SENTINEL};

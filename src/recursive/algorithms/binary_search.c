@@ -1,5 +1,5 @@
 #include "binary_search.h"
-#include "get_array_size.h"
+#include "../utils/get_array_size.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

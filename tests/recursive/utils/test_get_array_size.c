@@ -1,6 +1,6 @@
-#include "../../external/Unity/unity.h"
-#include "../../src/recursive/get_array_size.h"
-#include "../../utils/sentinel.h"
+#include "../../../external/Unity/unity.h"
+#include "../../../src/recursive/utils/get_array_size.h"
+#include "../../../utils/sentinel.h"
 
 
 void shouldReturnTotalItemsArrWithSequentialValues() {

@@ -1,5 +1,5 @@
-#include "../../external/Unity/unity.h"
-#include "../../src/structured/binary_search.h"
+#include "../../../external/Unity/unity.h"
+#include "../../../src/structured/algorithms/binary_search.h"
 
 void shouldReturnCorrectPositionAndValue(void) {
   int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
