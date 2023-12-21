@@ -3,6 +3,7 @@
 #include "recursive/examples/test_sum.h"
 #include "structured/algorithms/test_binary_search.h"
 #include "recursive/algorithms/test_binary_search.h"
+#include "recursive/algorithms/test_quicksort.h"
 
 void setUp(void) {}
 
@@ -37,6 +38,9 @@ int main(void) {
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayEmpty_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayNULL_Recursive);
   RUN_TEST(shouldReturnZero_Recursive);
+
+  // recursive quicksort
+  RUN_TEST(shouldSortArrayInput);
 
   return UNITY_END();
 }
