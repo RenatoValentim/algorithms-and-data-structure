@@ -5,7 +5,7 @@
 #include <string.h>
 
 int binarySearchRecursive(int arr[], int value, int sentinel) {
-  if (!value || arr == NULL) {
+  if (arr == NULL) {
     return -1;
   }
   int low = 0;

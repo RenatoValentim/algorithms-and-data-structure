@@ -18,6 +18,7 @@ int main(void) {
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayNULL);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArraySizeEqualZero);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArraySizeNeative);
+  RUN_TEST(shouldReturnZero);
 
   // recursive sum
   RUN_TEST(shouldSumAllValuesAndReturnTheTotal);
@@ -35,6 +36,7 @@ int main(void) {
   RUN_TEST(shouldReturnNegativePositionAndValueIfValueNotFound_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayEmpty_Recursive);
   RUN_TEST(shouldReturnNegativePositionAndValueIfArrayNULL_Recursive);
+  RUN_TEST(shouldReturnZero_Recursive);
 
   return UNITY_END();
 }

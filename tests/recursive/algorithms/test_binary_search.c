@@ -11,6 +11,14 @@ void shouldReturnCorrectPositionAndValue_Recursive(void) {
   TEST_ASSERT_EQUAL(3, output);
 }
 
+void shouldReturnZero_Recursive(void) {
+  int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ARRAY_INT_SENTINEL};
+
+  int output = binarySearchRecursive(numbers, 0, ARRAY_INT_SENTINEL);
+
+  TEST_ASSERT_EQUAL(0, output);
+}
+
 void shouldReturnNegativePositionAndValueIfValueNotFound_Recursive(void) {
   int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ARRAY_INT_SENTINEL};
 
