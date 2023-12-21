@@ -1,11 +1,16 @@
 # bases
 Studies of bases such as algorithms data structures...
 
-- Run all tests
+- Run all tests without docker
 ```BASH
 make
 ```
 
-- FIXES
-- [x] Resolve SENTINEL strategy to use `'\0'` for `char[]` and `-` for `int[]`
-- [x] Add a test with a value of 0 to the recursive algorithms array
+- Run all tests with docker
+```BASH
+docker build -t studies/algorithms .
+```
+
+```BASH
+docker run --rm -it studies/algorithms
+```
