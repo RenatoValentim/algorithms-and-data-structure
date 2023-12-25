@@ -14,4 +14,12 @@ func TestBinarySearch(t *testing.T) {
 
 		assert.Equal(-1, output)
 	})
+
+	t.Run(`Should return a negative index if arr is empty`, func(t *testing.T) {
+		arr := []int{}
+
+		output := recursive.BinarySearch(arr, 3)
+
+		assert.Equal(-1, output)
+	})
 }
