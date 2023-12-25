@@ -31,7 +31,7 @@ func TestBinarySearch(t *testing.T) {
 		assert.Equal(-1, output)
 	})
 
-	t.Run(`Should return the index for the searched value when the guess is equals fo the value`, func(t *testing.T) {
+	t.Run(`Should return the index for the searched value when the guess is equals for the value`, func(t *testing.T) {
 		arr := []int{1, 2, 3, 4, 5}
 
 		output := recursive.BinarySearch(arr, 3)
