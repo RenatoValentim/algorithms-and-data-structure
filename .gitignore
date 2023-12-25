@@ -72,3 +72,4 @@ dkms.conf
 
 # Go workspace file
 go.work
+cover.cov

@@ -11,5 +11,13 @@ func BinarySearch(arr []int, val int) int {
 	if guess == val {
 		return middleIndex
 	}
+	if guess > val {
+		highestIndex = middleIndex - 1
+		return BinarySearch(arr[:highestIndex], val)
+	}
+	if guess < val {
+		lowestIndex = middleIndex + 1
+		return BinarySearch(arr[lowestIndex:], val)
+	}
 	return -1
 }

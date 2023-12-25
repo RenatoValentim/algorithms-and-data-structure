@@ -38,4 +38,20 @@ func TestBinarySearch(t *testing.T) {
 
 		assert.Equal(2, output)
 	})
+
+	t.Run(`Should return the index for the searched value when the value is in the arr but less than the guess`, func(t *testing.T) {
+		arr := []int{1, 2, 3, 4, 5}
+
+		output := recursive.BinarySearch(arr, 1)
+
+		assert.Equal(0, output)
+	})
+
+	t.Run(`Should return the index for the searched value when the value is in the arr but is greater than the guess`, func(t *testing.T) {
+		arr := []int{1, 2, 3, 4, 5}
+
+		output := recursive.BinarySearch(arr, 5)
+
+		assert.Equal(4, output)
+	})
 }
