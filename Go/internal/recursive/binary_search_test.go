@@ -22,4 +22,12 @@ func TestBinarySearch(t *testing.T) {
 
 		assert.Equal(-1, output)
 	})
+
+	t.Run(`Should return a negative index if the value not in arr`, func(t *testing.T) {
+		arr := []int{1, 2, 3}
+
+		output := recursive.BinarySearch(arr, 5)
+
+		assert.Equal(-1, output)
+	})
 }
